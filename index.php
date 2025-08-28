@@ -265,7 +265,7 @@ $cv_data = [
     <!-- Presentación -->
     <section id="home" class="hero-section">
         <div class="container">
-            <div class="row align-items-center min-vh-100">
+            <div class="row align-items-center min-vh-100 mt-responsive">
                 <div class="col-lg-6">
                     <div class="hero-content">
                         <div class="mb-3">
@@ -280,7 +280,7 @@ $cv_data = [
                         <p class="lead mb-4 animate-fade-in-delay-2">
                             <?php echo $cv_data['summary']; ?>
                         </p>
-                        <div class="d-flex flex-wrap gap-3 animate-fade-in-delay-3">
+                        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start animate-fade-in-delay-3">
                             <a href="#contact" class="btn btn-primary btn-lg">
                                 <i class="bi bi-envelope me-2"></i>Contactar
                             </a>
