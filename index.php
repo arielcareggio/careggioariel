@@ -306,6 +306,9 @@ $cv_data = [
                         <a class="nav-link" href="#experience">Experiencia</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyectos Relevantes</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#skills">Habilidades</a>
                     </li>
                     <li class="nav-item">
@@ -515,7 +518,7 @@ $cv_data = [
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 mx-auto">
-                    <h2 class="section-title text-center mb-3">Proyectos relevantes</h2>
+                    <h2 class="section-title text-center mb-3">Proyectos Relevantes</h2>
                     <p class="text-center text-muted mb-5">Algunos de los proyectos más relevantes en los que he trabajado de manera independiente.</p>
                     
                     <div class="row g-4">
