@@ -46,7 +46,7 @@ $cv_data = [
         ],
         [
             'title' => 'FUNDADOR Y PRINCIPAL PROGRAMADOR FULLSTACK',
-            'company' => '<a href="https://gestiondelcot.com.ar" target="_blank">gestiondelcot.com.ar</a> (2024)<br><a href="https://agroruralsistemas.com.ar" target="_blank">agroruralsistemas.com.ar</a> (2010)<br><a href="https://grupodrado.com.ar" target="_blank">grupodrado.com.ar</a> (2019)',
+            'company' => 'Algunos proyectos se pueden ver en <a href="#projects">"Proyectos Relevantes"</a>.',
             'period' => '',
             'description' => '<p><strong>Responsabilidades:</strong></p>
                             <ul>
