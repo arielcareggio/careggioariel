@@ -390,10 +390,97 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(45deg, var(--success-color), #146c43) !important;
 }
 
+/* Proyectos */
+.project-card {
+    transition: var(--transition);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    /* min-height: 450px; */
+}
+
+.project-card .card-body {
+    padding: 2rem;
+    margin: 20px 20px 20px 0;
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+    padding: 20px;
+}
+
+.project-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: var(--transition);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+.technologies .badge {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+    margin: 0.2rem 0.2rem 0.2rem 0;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+[data-bs-theme="dark"] .project-card {
+    background-color: rgba(30, 41, 59, 0.9);
+    border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+[data-bs-theme="dark"] .project-image {
+    background: #2d2d2d !important;
+}
+
+/* Asegurar que las columnas tengan la misma altura */
+.project-card .row {
+    align-items: stretch;
+}
+
+.project-card .col-md-6 {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Diseño Responsivo*/
 @media (max-width: 992px) {
     .mt-responsive{
         margin-top: 6rem;
+    }
+    
+    .project-image {
+        height: 320px;
+        padding: 15px;
+    }
+    
+    .project-card {
+        min-height: 400px;
+    }
+    
+    .project-card .card-body {
+        padding: 1.5rem;
+        margin: 15px 10px;
+        min-height: 290px;
     }
 }
 
@@ -419,6 +506,33 @@ h1, h2, h3, h4, h5, h6 {
     
     .display-4 {
         font-size: 2.5rem;
+    }
+    
+    .project-image {
+        height: 250px;
+        margin-bottom: 1rem;
+        padding: 10px;
+    }
+    
+    .project-card {
+        min-height: auto;
+    }
+    
+    .project-card .card-body {
+        padding: 1.25rem;
+        margin: 15px 10px;
+        min-height: auto;
+        justify-content: flex-start;
+    }
+    
+    .project-card .row {
+        flex-direction: column;
+    }
+    
+    .project-card .col-md-4,
+    .project-card .col-md-8 {
+        max-width: 100%;
+        flex: 0 0 100%;
     }
 }
 

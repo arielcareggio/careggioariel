@@ -191,6 +191,68 @@ $cv_data = [
     ],
     'languages' => [
         ['name' => 'Español', 'level' => 'Nativo'],
+    ],
+    'projects' => [
+        [
+            'title' => 'Sistema de Gestión del COT del ARBA',
+            'description' => 'Mi proyecto más reciente y moderno consiste en un sistema web completo para la gestión y automatización de los COT de ARBA. Incluye integración con el <strong>WebService</strong> de ARBA, lo que permite optimizar tiempos al usuario mediante el autocompletado de datos para la generación de remitos, y fue además adaptado como <strong>PWA</strong>, permitiendo su uso desde dispositivos móviles.',
+            'image' => 'assets/img/projects/gestiondelcot.png',
+            'technologies' => ['PHP', 'MySQL', 'Bootstrap', 'JavaScript', 'Smarty Templates', 'WebService ARBA', 'PWA', 'GitHub', 'APIs REST MercadoPago', 'POO'],
+            'demo' => 'Usuario: demo@gestiondelcot.com.ar<br>Contraseña: gestiondelcot',
+            'demo_url' => 'https://gestiondelcot.com.ar/inicio-sesion',
+            'github_url_front' => '#',
+            'github_url_back' => '#'
+        ],
+        [
+            'title' => 'Sistema de Gestión Cartas de Porte Electrónicas (CPE) de ARCA (ex AFIP)',
+            'description' => 'Mi proyecto insignia, con más de 15 años de trayectoria en el mercado, es un sistema web integral para la gestión y automatización de las CPE del ARCA. Incluye la integración completa con el <strong>WebService</strong> “WSCPE” de ARCA, implementando todos los métodos provistos por el mismo para las CPE Automotor.<br><br>Debido a que en los últimos años he estado enfocado en trabajos en relación de dependencia, no he priorizado la actualización visual, aunque el backend ha sido desarrollado con gran complejidad y robustez, reflejando años de experiencia en sistemas de misión crítica.<br><br>Además, el sistema cuenta con una versión para Android y otra instalable para Windows, esta última desarrollada en Java de escritorio, donde incorpora tecnologías adicionales, entre ellas el uso de la base de datos PostgreSQL.',
+            'image' => 'assets/img/projects/agroruralsistemas.png',
+            'technologies' => ['PHP', 'MySQL', 'PostgreSQL', 'Bootstrap', 'JavaScript', 'Smarty Templates', 'WebService ARCA', 'GitHub', 'Java Desktop', 'POO', 'APIs REST', 'APIs REST MercadoPago'],
+            'demo' => 'Usuario: demo@agroruralsistemas.com.ar<br>Contraseña: agroruralsistemas',
+            'demo_url' => 'https://agroruralsistemas.com.ar',
+            'github_url_front' => '#',
+            'github_url_back' => '#'
+        ],
+        [
+            'title' => 'GrupoDrado',
+            'description' => 'Proyecto descontinuado que desarrollé con el objetivo de unificar mis sistemas, tanto online como de escritorio en Windows. Entre los módulos incluidos se encontraban: Cartas de Porte, Gestión del COT (posteriormente reemplazado por gestiondelcot.com.ar), Gestión de Stock y Gestión Porcina. Este desarrollo me permitió trabajar en la integración de distintos entornos (web y desktop), aplicar buenas prácticas de modularidad y gestionar bases de datos compartidas entre múltiples sistemas.',
+            'image' => 'assets/img/projects/grupodrado.png',
+            'technologies' => ['PHP', 'MySQL', 'PostgreSQL', 'Bootstrap', 'JavaScript', 'Smarty Templates', 'WebService ARCA', 'GitHub', 'Java Desktop', 'POO', 'APIs REST'],
+            'demo' => '',
+            'demo_url' => 'https://grupodrado.com.ar',
+            'github_url_front' => '#',
+            'github_url_back' => '#'
+        ],
+        [
+            'title' => 'Portal de Noticias para el Agro',
+            'description' => 'Proyecto autosustentable iniciado como hobbie, diseñado para recolectar automáticamente noticias relacionadas con el sector agro. Mediante tareas programadas (cron), el sistema lee RSS de distintos portales, identifica noticias relevantes, las almacena en una base de datos propia y las publica en el portal. El proyecto es completamente autónomo, funcionando sin intervención manual, lo que demuestra habilidades en automatización, procesamiento de datos y manejo de flujos de información en tiempo real.',
+            'image' => 'assets/img/projects/agroruralnoticias.png',
+            'technologies' => ['PHP', 'MySQL', 'PostgreSQL', 'Bootstrap', 'JavaScript', 'Smarty Templates', 'WebService ARCA', 'GitHub', 'Java Desktop', 'POO', 'APIs REST', 'RSS'],
+            'demo' => '',
+            'demo_url' => 'https://agroruralnoticias.com.ar',
+            'github_url_front' => '#',
+            'github_url_back' => '#'
+        ],
+        [
+            'title' => 'Sistema de Finanzas Personales',
+            'description' => '<strong>Proyecto desarrollado íntegramente desde cero con el objetivo de iniciarme en Laravel y React.</strong><br><br>Incluye un sistema completo de <strong>autenticación mediante Laravel Sanctum</strong>, con login y comunicación segura entre Frontend y Backend a través de <strong>tokens de sesión</strong>. Además, cuenta con gestión de rutas, un dashboard diseñado desde cero y funcionalidades completas de <strong>CRUD de datos</strong>.<br><br>El sistema se encuentra en funcionamiento, aunque no fue desplegado. El código fuente está disponible en mi <strong>GitHub</strong> para su verificación.',
+            'image' => 'assets/img/projects/zfin.png',
+            'technologies' => ['PHP', 'Laravel', 'MySQL', 'Sanctum', 'React', 'Vite', 'Tailwind', 'JavaScript', 'TypeScript', 'GitHub'],
+            'demo' => '',
+            'demo_url' => '#',
+            'github_url_front' => 'https://github.com/arielcareggio/zfin-panel-react',
+            'github_url_back' => 'https://github.com/arielcareggio/zfin-api-laravel'
+        ],
+        [
+            'title' => 'API REST Full Dinámica en PHP Nativo + MySQL',
+            'description' => '<strong>API REST Full Dinámica en PHP Nativo + MySQL</strong><br>Proyecto personal en el que desarrollé una <strong>API REST completamente dinámica y configurable</strong>, pensada para integrarse con <strong>cualquier base de datos, tablas y columnas</strong>.<br>El sistema permite definir desde parámetros los datos a obtener, incluyendo <strong>filtros, ordenamientos, limitaciones y relaciones entre tablas</strong>, además de ofrecer un <strong>CRUD completo (GET, POST, PUT y DELETE)</strong>.<br><br>En el momento en que lo dejé, la implementación del método <strong>GET</strong> ya se encontraba finalizada y funcionando de forma totalmente dinámica, quedando pendiente la extensión hacia el resto de los verbos HTTP.<br><br>Si bien el proyecto se encuentra <strong>muy avanzado y funcional</strong>, no pude continuarlo debido a mis compromisos laborales en relación de dependencia. Sin embargo, el código está disponible en GitHub y puede probarse libremente.',
+            'image' => 'assets/img/projects/apirest.png',
+            'technologies' => ['PHP', 'MySQL', 'API REST', 'GitHub'],
+            'demo' => '',
+            'demo_url' => '#',
+            'github_url_front' => '#',
+            'github_url_back' => 'https://github.com/arielcareggio/API-REST-CRUD-PHP-DINAMICA'
+        ],
     ]
 ];
 ?>
@@ -443,6 +505,88 @@ $cv_data = [
                         </div>
                     </div>
                     <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos relevantes -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mx-auto">
+                    <h2 class="section-title text-center mb-3">Proyectos relevantes</h2>
+                    <p class="text-center text-muted mb-5">Algunos de los proyectos más relevantes en los que he trabajado de manera independiente.</p>
+                    
+                    <div class="row g-4">
+                        <?php foreach($cv_data['projects'] as $project): ?>
+                        <div class="col-12">
+                            <div class="card project-card h-100 shadow-sm">
+                                <div class="row g-0 align-items-center">
+                                    <div class="col-md-6">
+                                        <div class="project-image">
+                                            <img src="<?php echo $project['image']; ?>" 
+                                                 class="img-fluid rounded-start" 
+                                                 alt="<?php echo $project['title']; ?>"
+                                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title mb-3"><?php echo $project['title']; ?></h5>
+                                            <p class="card-text text-muted mb-3"><?php echo $project['description']; ?></p>
+                                            
+                                            <div class="technologies mb-3">
+                                                <h6 class="mb-2">Tecnologías utilizadas:</h6>
+                                                <div class="d-flex flex-wrap gap-2">
+                                                    <?php foreach($project['technologies'] as $tech): ?>
+                                                    <span class="badge bg-primary"><?php echo $tech; ?></span>
+                                                    <?php endforeach; ?>
+                                                </div>
+                                            </div>
+
+                                            <?php if($project['demo'] !== ''): ?>
+                                                <div class="technologies mb-3">
+                                                    <h6 class="mb-2">Demo:</h6>
+                                                    <p class="card-text text-muted mb-3"><?php echo $project['demo']; ?></p>
+                                                </div>
+                                            <?php endif; ?>
+                                            
+                                            <?php if($project['demo_url'] !== '#'): ?>
+                                                <a href="<?php echo $project['demo_url']; ?>" 
+                                                class="btn btn-primary" 
+                                                target="_blank">
+                                                    <i class="bi bi-eye me-2"></i>Ver demo
+                                                </a>
+                                            <?php endif; ?>
+
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <?php if($project['github_url_front'] !== '#'): ?>
+                                                        <a href="<?php echo $project['github_url_front']; ?>" 
+                                                        class="btn btn-primary" 
+                                                        target="_blank">
+                                                            <i class="bi bi-github me-2"></i>Código Frontend
+                                                        </a>
+                                                    <?php endif; ?>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <?php if($project['github_url_back'] !== '#'): ?>
+                                                        <a href="<?php echo $project['github_url_back']; ?>" 
+                                                        class="btn btn-primary" 
+                                                        target="_blank">
+                                                            <i class="bi bi-github me-2"></i>Código Backend
+                                                        </a>
+                                                    <?php endif; ?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <?php endforeach; ?>
+                    </div>
                 </div>
             </div>
         </div>
